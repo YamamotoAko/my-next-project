@@ -17,6 +17,15 @@
   width: auto;
 }
 
+.items {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  gap: 40px;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
 @media (max-width: 600px) {
   .header {
     padding: 24px 16px 8px;
