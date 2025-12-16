@@ -12,7 +12,7 @@
 }
 
 .container {
-  position: absolute;
+  position: relative;
   background-color: #fff;
   width: 840px;
   margin: -40px auto 0;

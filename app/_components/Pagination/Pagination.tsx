@@ -8,14 +8,13 @@ type Props = {
   basePath?: string;
 };
 
-export default function pagination({
+export default function Pagination({
   totalCount,
   current = 1,
   basePath = '/news',
 }: Props) {
   const pages = Array.from(
     { length: Math.ceil(totalCount / NEWS_LIST_LIMIT) },
-    // Math.ceil 余りを切り上げる（45件を1ページ10件ずつ表示する時ページ数は4.5になるので切り上げるという意味。）
     (_, i) => i + 1
   );
 
