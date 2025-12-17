@@ -4,6 +4,7 @@ import NewsList from '@/app/_components/NewsList/NewsList';
 import Category from '@/app/_components/Category/Category';
 import { NEWS_LIST_LIMIT } from '@/app/_constants';
 import Pagination from '@/app/_components/Pagination/Pagination';
+import SearchField from '@/app/_components/SearchField/SearchField';
 
 type Props = {
   params: {
@@ -20,6 +21,7 @@ export default async function Page({ params }: Props) {
 
   return (
     <>
+      <SearchField />
       <p>
         <Category category={category} />
         の一覧
