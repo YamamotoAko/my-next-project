@@ -23,7 +23,7 @@ export default function Pagination({
       <ul className={styles.container}>
         {pages.map((p) => (
           <li className={styles.list} key={p}>
-            {current! == p ? (
+            {current !== p ? (
               <Link href={`${basePath}/p/${p}`} className={styles.item}>
                 {p}
               </Link>
